@@ -25,6 +25,8 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
+    implementation 'com.mitchtalmadge:ascii-data:1.4.0'
 }
 
 application {
