@@ -3,12 +3,19 @@
  */
 package DevOps02;
 
+import com.mitchtalmadge.asciidata.graph.ASCIIGraph;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        String graph = ASCIIGraph.fromSeries(new double[] {1.0,2.0,3.0,10.0,7.0,9.0,5.0,4.0}).plot();
+
+        System.out.println(graph);
+
     }
 }
+
